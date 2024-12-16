@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Beauty Salon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <a href="index.html" class="flex items-center py-4 px-2 text-gray-700 hover:text-pink-500">
+                        <img src="/images/logo.jpg" alt="Radiant Beauty Logo" class="h-10 w-10 mr-2">
+                        <span class="font-semibold text-xl">Radiant Beauty</span>
+                    </a>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#services" class="py-2 px-2 text-gray-700 hover:text-pink-500">Services</a>
+                        <a href="#booking" class="py-2 px-2 text-gray-700 hover:text-pink-500">Book Now</a>
+                        <a href="#contact" class="py-2 px-2 text-gray-700 hover:text-pink-500">Contact</a>
+                        <a href="cosmetic-products.html" class="py-2 px-2 text-gray-700 hover:text-pink-500">Cosmetic Products</a>
+                        <a href="hair-cuts.html" class="py-2 px-2 text-gray-700 hover:text-pink-500">Hair Cutz</a>
+                        <a href="braiding-styles.html" class="py-2 px-2 text-gray-700 hover:text-pink-500">Women Braides</a>
+
+
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#booking" class="py-2 px-4 bg-pink-500 text-white rounded hover:bg-pink-400 transition duration-300">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen" style="background-image: url('https://images.pexels.com/photos/13068358/pexels-photo-13068358.jpeg?auto=compress&cs=tinysrgb&w=600')">
+        <div class="bg-black bg-opacity-50 h-full flex items-center">
+            <div class="px-4 max-w-xl mx-auto text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Transform Your Look</h1>
+                <p class="text-xl mb-8">Professional beauty and barbering services tailored to your unique style</p>
+                <a href="#booking" class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition duration-300">
+                    Schedule Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <img src="https://images.pexels.com/photos/8867545/pexels-photo-8867545.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hair Styling" class="mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Hair Styling</h3>
+                    <p>Expert cuts, colors, and treatments for all hair types</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <img src="https://images.pexels.com/photos/2328149/pexels-photo-2328149.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Makeup" class="mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Makeup</h3>
+                    <p>Professional makeup application for any occasion</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <img src="https://images.pexels.com/photos/7697394/pexels-photo-7697394.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Barbering" class="mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Barbering</h3>
+                    <p>Classic and modern haircuts for men</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Book an Appointment</h2>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <form id="bookingForm" class="space-y-4">
+                    <input type="text" placeholder="Full Name" required class="w-full p-3 border rounded">
+                    <input type="email" placeholder="Email Address" required class="w-full p-3 border rounded">
+                    <input type="tel" placeholder="Phone Number" required class="w-full p-3 border rounded">
+                    <select class="w-full p-3 border rounded" required>
+                        <option value="">Select Service</option>
+                        <option value="hair">Hair Styling</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="barber">Barbering</option>
+                    </select>
+                    <input type="date" class="w-full p-3 border rounded" required>
+                    <button type="submit" class="w-full bg-pink-500 text-white p-3 rounded hover:bg-pink-600">
+                        Confirm Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Expert Team</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img src="/api/placeholder/300/300" alt="Team Member" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">Emily Johnson</h3>
+                    <p class="text-gray-600">Lead Hairstylist</p>
+                </div>
+                <div class="text-center">
+                    <img src="/api/placeholder/300/300" alt="Team Member" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">Michael Rodriguez</h3>
+                    <p class="text-gray-600">Master Barber</p>
+                </div>
+                <div class="text-center">
+                    <img src="/api/placeholder/300/300" alt="Team Member" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">Sarah Kim</h3>
+                    <p class="text-gray-600">Makeup Artist</p>
+                </div>
+                <div class="text-center">
+                    <img src="/api/placeholder/300/300" alt="Team Member" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">David Chen</h3>
+                    <p class="text-gray-600">Color Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-2">📍 123 Beauty Lane, Style City</p>
+                    <p class="mb-2">📞 (555) 123-4567</p>
+                    <p class="mb-2">✉️ hello@radiantbeauty.com</p>
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-2">Business Hours</h4>
+                        <p>Mon-Fri: 9am - 8pm</p>
+                        <p>Sat: 10am - 6pm</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded">
+                        <textarea placeholder="Your Message" class="w-full p-3 border rounded h-40"></textarea>
+                        <button class="w-full bg-pink-500 text-white p-3 rounded hover:bg-pink-600">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-300 hover:text-white">Instagram</a>
+                <a href="#" class="text-gray-300 hover:text-white">Facebook</a>
+                <a href="#" class="text-gray-300 hover:text-white">Twitter</a>
+            </div>
+            <p>&copy; 2024 Radiant Beauty Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
